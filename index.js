@@ -18,13 +18,6 @@ app.listen(port, function() {
   console.log('Node app is running on port', port);
 });
 
-
-/**********************************************************************
- * Ideally the functions below here would go into a different file
- * but for ease of reading this example and seeing all of the pieces
- * they are listed here.
- **********************************************************************/
-
 function handleMath(request, response) {
 	const postage = request.query.postage;
 	const weight = Number(request.query.weight);
